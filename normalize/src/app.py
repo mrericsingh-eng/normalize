@@ -7,11 +7,11 @@ from pydantic import ValidationError
 import uvicorn
 from dotenv import load_dotenv
 
-from models import NormalizeIn, NormalizeOut, Contact, Entity, Enrichment
-from logic.categorizer import categorize
-from logic.extract_contact import extract_contact
-from logic.extract_entities import extract_entities
-from logic.enrich import enrich
+from .models import NormalizeIn, NormalizeOut, Contact, Entity, Enrichment
+from .logic.categorizer import categorize
+from .logic.extract_contact import extract_contact
+from .logic.extract_entities import extract_entities
+from .logic.enrich import enrich
 
 # Load environment variables
 load_dotenv()
